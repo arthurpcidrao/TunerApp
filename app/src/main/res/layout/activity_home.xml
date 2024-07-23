@@ -12,14 +12,21 @@
         android:layout_height="match_parent"
         android:background="@color/background_color">
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_screen"
+            android:layout_width="match_parent"
+            android:layout_height="650dp">
+
+        </androidx.fragment.app.FragmentContainerView>
+
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="70sp"
-            android:orientation="vertical"
-            android:background="@color/command_bar"
             android:layout_alignParentBottom="true"
+            android:background="@color/command_bar"
             android:elevation="10dp"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,112 +36,112 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center" >
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/tuner"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"/>
+                        android:background="@color/transparent" />
 
                     <ImageView
                         android:id="@+id/tuner_image"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/diapason_icon_gray"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/diapason_icon_gray"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center" >
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/strings"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"/>
+                        android:background="@color/transparent" />
 
                     <ImageView
                         android:id="@+id/strings_image"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/guitar_gray"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/guitar_gray"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center" >
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/settings"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"/>
+                        android:background="@color/transparent" />
 
                     <ImageView
                         android:id="@+id/settings_image"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/setting_gray"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/setting_gray"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center" >
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/tap"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"/>
+                        android:background="@color/transparent" />
 
                     <ImageView
                         android:id="@+id/tap_image"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/tap_gray"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/tap_gray"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center" >
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/metronome"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/transparent"/>
+                        android:background="@color/transparent" />
 
                     <ImageView
                         android:id="@+id/metronome_image"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/metronome_gray"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/metronome_gray"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
